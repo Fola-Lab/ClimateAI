@@ -3,7 +3,7 @@ This project investigates how CO₂ prediction models behave under realistic dat
 Motivation
 AI models are increasingly used in climate and policy decision-making. But what happens when these systems are confidently wrong?
 
-Research Questions
+Research Questions:
 Can AI models produce high-confidence but incorrect predictions?
 Do explanations make these errors more or less trustworthy?
 Can simple signals help us detect and control unsafe predictions?
@@ -12,20 +12,17 @@ Dataset
 We use the Our World in Data CO2 and Greenhouse Gas Emissions Dataset, a widely used source in climate research and policy.
 
 Methodology
-1. Baseline Model
+1. Baseline Model:
 Random Forest Regression predicting CO₂ emissions
 
-2. Failure Simulation
+2. Failure Simulation:
 We simulate real-world data issues introducing:
+Missing data, Noisy inputs, Distribution shift (cross-region / temporal)
 
-Missing data
-Noisy inputs
-Distribution shift (cross-region / temporal)
-
-3. Misleading Behavior Detection
+3. Misleading Behavior Detection: 
 We define misleading predictions as High-confidence predictions with large error
 
-4. Explainability Audit
+4. Explainability Audit:
 We test whether SHAP explanations reveal failure Or reinforce false trust
 
 5. Control System
